@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="14; url='map.html'" />
+    <title>Darebuzz</title>
+    <style>
+.rw-wrapper{
+	width: 100%;
+	margin: 110px auto 0 auto;
+	padding-top: 150px;
+	
+	
+}
+
+.rw-sentence span{
+	color: #444;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #6b969d;
+}
+
+.rw-words-1 span{
+	animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span{
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+	animation-delay: 3s; 
+	color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 6s; 
+	color: #6b739d;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 9s; 
+	color: #7a6b9d;
+}
+
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+	20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
+
+	</style>
+	<body style="background-color:black; color:red;">
+	<section class="rw-wrapper">
+	<div class="rw-sentence">
+		
+		<div class="rw-words rw-words-2">
+			<span style="padding-left: 280px;"><h1>"LET'S LEARN AND PLAY FROM KASHMIR TO KANYAKUMARI"</h1></span>
+			
+    <span style="padding-left: 550px;"> <h1>EXPLORE MORE!</h1></span>
+			<span style="padding-left: 550px;"><h1>ARE YOU READY?<h1></span>
+		
+			
+		</div>
+	</div>
+</section>
+	</body>
+	</html>
